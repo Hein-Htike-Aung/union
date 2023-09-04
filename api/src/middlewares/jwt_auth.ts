@@ -5,8 +5,8 @@ import {
   TokenVerifyError,
   TokenVerifyPayload,
 } from '../../types';
-import UserService from '../modules/v1/user/services/user.service';
 import errorResponse from '../utils/errorResponse';
+import UserService from '../modules/user/services/user.service';
 
 const jwt_auth = (
   req: TokenBasedRequest,
