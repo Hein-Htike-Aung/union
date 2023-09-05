@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.MuiPaper-elevation {
+    box-shadow: none !important;
+}
+
+*, *::before, *::after {
+    outline: none;
+}
