@@ -206,4 +206,13 @@ export default class UserController {
       handleError(res, error);
     }
   };
+
+  static role_list = async (req: Request, res: Response) => {
+    try {
+      const roles = await Role.findAll();
+      return successResponse(res, null, roles);
+    } catch (error) {
+      handleError(res, error);
+    }
+  };
 }

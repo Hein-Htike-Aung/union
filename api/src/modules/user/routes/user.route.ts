@@ -37,4 +37,6 @@ router.get(
   UserController.userList,
 );
 
+router.get('/v1/users/roles/list', UserController.role_list);
+
 export default router;
