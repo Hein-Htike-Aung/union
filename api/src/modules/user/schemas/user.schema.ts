@@ -19,11 +19,11 @@ export const createUserSchema = object({
 export const updateUserSchema = object({
   ...user_id,
   body: object({
-    username: string().required(),
-    password: string().required(),
+    username: string(),
+    password: string(),
     email: string().required(),
-    role_id: number().min(1).required(),
-    township_id: number().required().min(1),
+    role_id: number().min(1),
+    township_id: number().min(1),
   }),
 });
 
